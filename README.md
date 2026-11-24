@@ -14,7 +14,7 @@ Building a system for a clinic waiting room. The screen is connected to a giant 
 
 ---
 
-##1: Database Setup
+## 1: Database Setup
 Create database **`clinic_db`**.
 
 Create table **`patients`**:
@@ -25,22 +25,22 @@ Create table **`patients`**:
 
 ---
 
-##2: The Frontend UI
+## 2: The Frontend UI
 
-### 1. The Header & Buttons
+### The Header & Buttons
 *   Title: "Clinic Queue Monitor"
 *   Two Buttons: `+ Add Patient` and `Toggle Admin Table`.
 
-### 2. The Monitor View (Default)
+### The Monitor View (Default)
 *   Must use Flexbox or CSS Grid to create **3 equal columns** side-by-side: **WAITING**, **SERVING**, and **DONE**.
 *   Each column should have a distinct background color (e.g., Yellow for waiting, Green for serving, Gray for done).
 *   Display the patient names as giant cards/lists inside these columns.
 
-### 3. The Admin Table View (Hidden by default)
+### The Admin Table View (Hidden by default)
 *   A standard table: ID, Name, Symptom, Status, Actions.
 *   Wrapped in an `overflow-x: auto` container.
 
-### 4. The Modal
+### The Modal
 *   A form to add a patient (Name, Symptom).
 
 ---
