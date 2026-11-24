@@ -47,15 +47,12 @@ Create table **`patients`**:
 
 ## 3: JavaScript Logic
 1.  **Toggle View:** Clicking "Toggle Admin Table" hides the Monitor View and shows the Table View (and vice versa). 
-2.  **Validation:** If the name or symptom is empty, use `alert()` and stop the form submission.
+2.  **Validation:** If the name or symptom is empty, display error messages and stop the form submission.
 
 ---
 
 ## 4: Backend (PHP) - Read & Create
 1.  **Read (Monitor):** You must run **three separate `SELECT` queries**:
-    *   `SELECT * FROM patients WHERE status = 'Waiting'`
-    *   `SELECT * FROM patients WHERE status = 'Serving'`
-    *   `SELECT * FROM patients WHERE status = 'Done'`
     *   Loop through each query and display the names in their respective columns.
 2.  **Create:** Form submits via POST to `process.php` and inserts the patient (default status 'Waiting').
 3.  **Read (Admin Table):** Run a `SELECT * FROM patients` (show all) and loop through them into the HTML table.
@@ -64,8 +61,8 @@ Create table **`patients`**:
 
 ## 5: The Admin Actions
 Inside the Admin Table's Action column, add buttons to change the patient's status:
-1.  **Serve:** `UPDATE patients SET status = 'Serving' WHERE id = ...`
-2.  **Done:** `UPDATE patients SET status = 'Done' WHERE id = ...`
-3.  **Delete:** `DELETE FROM patients WHERE id = ...`
+1.  **Serve:** 
+2.  **Done:** 
+3.  **Delete:**
 
 ---
